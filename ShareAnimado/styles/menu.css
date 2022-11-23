@@ -1,0 +1,27 @@
+.menu {
+  background: rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 110px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu .toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: aliceblue;
+  border-radius: 50%;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(230, 35, 35);
+  font-size: 2em;
+  transition: 0.8s;
+}
+.menu.active .toggle {
+  transform: rotate(360deg);
+  box-shadow: 0 6px 8px rgb(230, 35, 35), 0 0 0 2px #333, 0 0 0 8px rgb(230, 35, 35);
+}
